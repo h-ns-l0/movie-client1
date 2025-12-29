@@ -9,7 +9,7 @@ function App() {
   useEffect(() => {
     // 👇 여기에 아까 Render에서 만든 [본인 서버 주소]를 넣으세요!
     // 뒤에 /hello 붙이는 것 잊지 마세요.
-    fetch('/api/hello') 
+    fetch('/api') 
       .then(response => response.text()) // 서버가 글자(text)를 준다고 가정
       .then(data => setMessage(data))    // 받은 글자를 message 변수에 넣기
       .catch(error => {

@@ -14,7 +14,7 @@ function App() {
       .then(data => setMessage(data))    // 받은 글자를 message 변수에 넣기
       .catch(error => {
         console.error('에러:', error);
-        setMessage("서버 연결 실패.. (Render 서버가 깨어나고 있을 수도 있어요!)");
+        setMessage("서버 연결 실패.. (EC2 서버가 깨어나고 있을 수도 있어요!)");
       });
   }, []);
 

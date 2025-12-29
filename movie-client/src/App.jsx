@@ -9,7 +9,7 @@ function App() {
   useEffect(() => {
     // 👇 여기에 아까 Render에서 만든 [본인 서버 주소]를 넣으세요!
     // 뒤에 /hello 붙이는 것 잊지 마세요.
-    fetch('https://movie-server-hhs.onrender.com/hello') 
+    fetch('http://43.201.106.14') 
       .then(response => response.text()) // 서버가 글자(text)를 준다고 가정
       .then(data => setMessage(data))    // 받은 글자를 message 변수에 넣기
       .catch(error => {
@@ -21,6 +21,7 @@ function App() {
   return (
     <div style={{ textAlign: 'center', marginTop: '50px' }}>
       <h1>🎬 영화 예매 사이트 (DevOps 실습)</h1>
+      <h2>서버 테스트중입니다</h2>
       <h2>서버에서 온 메시지:</h2>
       {/* 3. 서버에서 받은 메시지를 화면에 보여주기 */}
       <h3 style={{ color: 'blue' }}>{message}</h3>
